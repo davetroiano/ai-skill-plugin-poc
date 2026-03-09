@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "developer-plugin",
-      "source": "./plugins/developer-plugin",
+      "source": "./",
       "description": "Adds skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry"
     }
   ]
