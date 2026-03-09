@@ -1,0 +1,13 @@
+{
+  "name": "streaming-skills",
+  "owner": {
+    "name": "Dave Troiano"
+  },
+  "plugins": [
+    {
+      "name": "developer-plugin",
+      "source": "./plugins/developer-plugin",
+      "description": "Adds skills for streaming application developers, covering Kafka and Flink client libraries and Schema Registry"
+    }
+  ]
+}
