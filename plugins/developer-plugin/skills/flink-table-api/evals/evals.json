@@ -1,0 +1,23 @@
+{
+  "skill_name": "flink-table-api-skeleton",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "create a basic python table API app for confluent cloud",
+      "expected_output": "Python skeleton with filtering.py, cloud.properties, and README.md. Should include ConfluentSettings.from_file(), filtering example on examples.marketplace.orders table, and complete setup instructions.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I need to build a flink java application that connects to confluent cloud and does some basic filtering",
+      "expected_output": "Java skeleton with proper Gradle structure including build.gradle, settings.gradle, FlinkTableApiFiltering.java in correct package structure, cloud.properties in src/main/resources/, and comprehensive README.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "help me set up a flink table api project to get started with streaming",
+      "expected_output": "Should ask user whether they want Python or Java. After clarification (or defaulting to Python if no response), should generate complete skeleton with all necessary files.",
+      "files": []
+    }
+  ]
+}

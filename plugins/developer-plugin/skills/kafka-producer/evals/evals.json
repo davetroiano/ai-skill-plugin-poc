@@ -1,0 +1,23 @@
+{
+  "skill_name": "kafka-producer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to create a kafka producer in Python that sends user signup events to our Confluent Cloud cluster. The events will contain user_id, email, signup_timestamp, and signup_source fields. This is for our analytics pipeline, so we need high throughput since we get thousands of signups per minute during peak hours. Can you help me set this up with the proper schema registry integration?",
+      "expected_output": "Python producer with throughput optimization profile, Avro schema for signup events, .env configuration, error handling, and batch processing capabilities",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "hey can you build me a java kafka producer for my e-commerce app? i need to send order transactions to a topic called 'orders'. each order has order_id (string), customer_email (string), total_amount (decimal with 2 decimal places), items (array of product objects), and order_timestamp. these are financial transactions so we CANNOT lose any messages - durability is critical. we're using confluent cloud and have schema registry set up already.",
+      "expected_output": "Java producer with durability optimization profile, Avro schema with proper decimal handling for money, idempotence enabled, acks=all, proper error handling, Maven/Gradle setup",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "i'm building a real-time notification service in nodejs and need to publish events to kafka whenever a user gets mentioned in a comment. the schema should have: mention_id, mentioned_user_id, mentioning_user_id, comment_text, created_at timestamp. latency is super important here because we want notifications to be instant. can you create a producer that's optimized for low latency? we're on confluent cloud.",
+      "expected_output": "JavaScript/Node.js producer with latency optimization profile (linger.ms=0, no compression), Avro schema with timestamp-millis, proper async handling, .env setup, graceful shutdown",
+      "files": []
+    }
+  ]
+}
